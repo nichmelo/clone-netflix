@@ -9,20 +9,28 @@ body {
 }
 
 header .container {
+    position: fixed;
+
+    background-color: transparent;
+
     display: flex;
     align-items: center;
-    margin-top: 16px;
+
+    height: 68px;
+    margin-left: 60px;
 }
 
 header .logo {
-    margin-left: 70px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 27px;
+
     color: red;
 }
 
+/** MENU **/
 .menu ul {
     list-style: none;
-    margin-left: 45px;
+    margin-left: 35px;
 }
 
 .menu ul li {
@@ -32,38 +40,88 @@ header .logo {
 .menu ul li a {
     display: inline-block;
     text-decoration: none;
-    margin-right: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: 520;
     color: lightgrey;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 530;        
+
+    margin-right: 14px;    
 }
 
 .menu ul li a:hover {
-    color: grey;
-    transition: color 0.5s;
+    color: rgb(169, 168, 168);
+    transition: 0.5s;
 }
 
-/** FILME PRINCIPAL **/
+/** PRINCIPAL **/
 .principal {
-    background: url('/img/capa-ohana.jpg');
+    background: linear-gradient(360deg,rgba(0,0,0,1),rgba(0,0,0,0.1) 25%), url('/img/capa-ohana.jpg');
     background-size: cover;
     height: 720px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 main .container {
     width: 536px;
     height: 383px;
+    margin-left: 60px;
 }
 
-main .titulo {
+.principal .titulo {
     width: 492px;
     height: 196px;
 }
 
-main .descricao {
+.principal .descricao {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 21px;
-    color: white;
     font-weight: 520;
+
+    color: white;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+        
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+/** BOTÕES **/
+.botao {
+    font-size: 18px;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 4px;
+
+    padding: 13px 27px;
+    margin-right: 5px;
+
+    cursor: pointer;
+    transition: .1s;
+}
+
+.botao i {
+    margin-right: 7px;
+}
+
+#assistir {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+#info {
+    background-color: rgba(79, 76, 76, 0.9);
+    color: white;
+}
+
+#assistir:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+#info:hover {
+    background-color: rgba(79, 76, 76, 0.75);
 }

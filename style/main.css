@@ -66,7 +66,7 @@ header .logo {
     align-items: flex-start;
 }
 
-main .container {
+.principal .container {
     width: 536px;
     height: 383px;
     margin-left: 60px;
@@ -124,4 +124,16 @@ main .container {
 
 #info:hover {
     background-color: rgba(79, 76, 76, 0.75);
+}
+
+/** CAROUSEL **/
+.box-filme {
+    display: block;
+
+    cursor: pointer;
+
+    height: 100%;
+    width: 100%;
+        
+    border-radius: 4px;
 }

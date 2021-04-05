@@ -1,0 +1,39 @@
+@media screen and (max-width: 870px) {
+   
+    header .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .logo {
+        margin-top: 10px;
+    }
+
+    header .menu {
+        margin: 10px 0;
+    }
+
+    header .menu a {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .principal .container {
+        width: 100%;
+    }
+
+    .principal .titulo {
+        width: 378px;
+        height: 148px;
+    }
+    
+    .principal .descricao {
+        font-size: 95%;
+    }
+
+    .botao {
+        font-size: 95%;
+    }
+}
